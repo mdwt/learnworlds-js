@@ -1,21 +1,60 @@
 {
   "name": "learnworlds-sdk",
   "version": "1.0.0",
-  "description": "TypeScript SDK for LearnWorlds API",
+  "description": "TypeScript SDK for LearnWorlds API with full type safety and comprehensive method coverage",
+  "homepage": "https://github.com/mdwt/learnwords-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdwt/learnwords-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdwt/learnwords-js/issues"
+  },
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "sideEffects": false,
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "test": "vitest",
     "test:watch": "vitest --watch",
     "lint": "eslint src --ext .ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build",
+    "clean": "rm -rf dist"
   },
-  "keywords": ["learnworlds", "api", "sdk", "typescript"],
-  "author": "mdwt",
+  "keywords": [
+    "learnworlds",
+    "api",
+    "sdk",
+    "typescript",
+    "javascript",
+    "lms",
+    "learning-management-system",
+    "e-learning",
+    "rest-api",
+    "client"
+  ],
+  "author": {
+    "name": "mdwt",
+    "url": "https://github.com/mdwt"
+  },
   "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/node": "^20.10.0",
     "@typescript-eslint/eslint-plugin": "^6.13.0",
@@ -32,6 +71,8 @@
     "axios": "^1.6.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
   ]
 }
