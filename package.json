@@ -1,5 +1,5 @@
 {
-  "name": "learnworlds-sdk",
+  "name": "learnworlds-js",
   "version": "1.0.0",
   "description": "TypeScript SDK for LearnWorlds API with full type safety and comprehensive method coverage",
   "homepage": "https://github.com/mdwt/learnwords-js#readme",
