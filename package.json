@@ -2,13 +2,13 @@
   "name": "learnworlds-js",
   "version": "1.0.0",
   "description": "TypeScript SDK for LearnWorlds API with full type safety and comprehensive method coverage",
-  "homepage": "https://github.com/mdwt/learnwords-js#readme",
+  "homepage": "https://github.com/mdwt/learnworlds-js#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdwt/learnwords-js.git"
+    "url": "git+https://github.com/mdwt/learnworlds-js.git"
   },
   "bugs": {
-    "url": "https://github.com/mdwt/learnwords-js/issues"
+    "url": "https://github.com/mdwt/learnworlds-js/issues"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
